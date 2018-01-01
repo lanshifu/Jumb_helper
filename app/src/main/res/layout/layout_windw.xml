@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_append"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:gravity="bottom"
+        android:padding="16dp"
+        android:text="开始"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_weight="1"
+        android:background="#40000000"
+        android:padding="8dp"
+        android:id="@+id/tv_srceen"
+        android:layout_width="1024dp"
+        android:layout_height="1024dp"/>
+
+
+</LinearLayout>

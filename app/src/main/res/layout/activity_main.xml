@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:paddingBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="提示：手机需要root权限才能执行自动点击屏幕，没有root，出门左转先root"/>
+
+    <Button
+        android:id="@+id/btn_start"
+        android:onClick="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="启动悬浮窗"
+        />
+
+    <TextView
+        android:paddingTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置系数（按下时间 = 距离 / 系数） 跳太远就把参数调大一点"/>
+    <EditText
+        android:id="@+id/et_number"
+        android:inputType="numberDecimal"
+        android:text="0.75"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:onClick="Save"
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="保存"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="使用说明"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1、启动悬浮窗，然后去跳一跳游戏界面先开始游戏，点击悬浮窗“开始”。2、然后只需点击跳跃的起点和点击跳跃的终点，会有提示，自动跳跃。3、不想玩了就点击悬浮窗“暂停”，然后回到插件界面返回退出即可"/>
+
+</LinearLayout>  
